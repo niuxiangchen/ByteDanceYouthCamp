@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body,
+      html {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+      }
+
+      body {
+        padding: 10px;
+        box-sizing: border-box;
+      }
+
+      img {
+        height: 200px;
+      }
+      .content {
+        padding: 10px;
+        transition: background-color 1s, color 1s;
+      }
+
+      #modeCheckBox {
+        display: none;
+      }
+
+      #modeCheckBox:checked + .content {
+        background-color: black;
+        color: white;
+        transition: all 1s;
+      }
+
+      #change-btn {
+        font-size: 2rem;
+        float: right;
+      }
+
+      #change-btn::after {
+        content: "🌞";
+      }
+
+      #modeCheckBox:checked + .content #change-btn::after {
+        content: "🌜";
+      }
+    </style>
+  </head>
+  <body>
+    <input id="modeCheckBox" type="checkbox" />
+    <div class="content">
+      <header>
+        <label id="change-btn" for="modeCheckBox"></label>
+        <h1>八度空间</h1>
+      </header>
+      <main>
+        <figure class="album">
+          <img
+            src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.yzcdn.cn%2Fupload_files%2F2018%2F02%2F26%2FFp1obuhjQAnWqlp4a-QJI-cuLOPz.jpg%21730x0.jpg&refer=http%3A%2F%2Fimg.yzcdn.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1645001337&t=aebfa182731dc0606152c245d4a7f2ba"
+            alt="八度空间"
+          />
+        </figure>
+        <article class="description">
+          <p>
+            在这张专辑中，周杰伦的天马行空、奇思妙想依然能融会贯通于他的音乐之中，所以周杰伦对音乐的玩转以及呈现的方式更显得自如而能给听众带来喜感；而与此同时也有一部分人认为周杰伦的《八度空间》已经出现了复制自己的痕迹，听不到惊喜，感受不到不同，甚至专辑中的歌曲都能找到似曾相识的感觉。《八度空间》尽管在推陈出新这方面的确不如《范特西》来得那般的惊艳与极致，但是整体的水准却与《范特西》维持在了一条水平线上，所以尽管旋律的线条或有似曾相似之感，但是创意依然可圈可点，所以也算是一张水准之作
+            。
+            当《半兽人》华丽的序曲揭开其神秘面纱时，周杰伦使用强硬的节奏吟唱人类为了贪婪堕落为半兽人的故事。《半岛铁盒》的歌词是叙述一本名叫“半岛铁盒”的书，装满了情人的回忆，歌曲的耐听度高，这首歌是周杰伦在抒情歌曲领域越发成熟的情境之作。《火车叨位去》是周杰伦首度破天荒尝试台语演唱的歌曲，方文山运用了独特的本土词藻，在融合周杰伦创作的西洋氛围曲调后，两者竟产生了意想不到的舒适效应
+            。
+            在《分裂》的歌声里可以感受到周杰伦内心的声音划过，这是他内心最深层的个人独白。《爷爷泡的茶》是藉由“茶”这样平常的饮料，来阐述着爷爷生活的禅意，歌曲就仿佛爷爷告诉孙儿，当茶水的颜色蔓延、纯净快乐的旋律扬起时，名利自然就会瞬间抛至九霄云外。《回到过去》是刘耕宏跨刀写词的作品，刘耕宏勾勒出夜深人静时，悼念爱情的孤单感受。结尾曲《最后的战役》藉由磅礴弦乐述说军中袍泽共患难之情，在聆听了一路高潮迭起的歌曲后，这首歌更让人有一气呵成、前后呼应之感
+          </p>
+        </article>
+      </main>
+    </div>
+  </body>
+</html>
